@@ -1254,7 +1254,7 @@ start(...) ->
             {ok, T} = file:consult("config"),
             {port,Port,host,Host} = T,
             {ok, Pid} = open_socket(Host, Port)
-        end;
+        end
     catch
       What:Why ->
           io:format("oooo err: ~p ~p~n",[What,Why])
